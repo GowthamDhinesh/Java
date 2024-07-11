@@ -1,0 +1,42 @@
+ import java.util.Scanner;
+ interface Circle {
+    void calculateArea();
+}
+
+interface Rectangle 
+{
+    void calculateArea();
+}
+
+interface Triangle {
+    void calculateArea();
+}
+
+class Shape implements Circle, Rectangle, Triangle
+{
+    public void calculateArea()
+    {
+        
+        double r = 5.0; 
+        double circleArea = 3.14 * r * r;
+        System.out.println("Area of the circle: " + circleArea);
+
+       
+        double l = 10.0; 
+        double w = 7.0; 
+        double rectangleArea = l * w;
+        System.out.println("Area of the rectangle: " + rectangleArea);
+
+        
+        double b = 6.0;
+        double h = 4.0;
+        double triangleArea = 0.5 * b * h;
+        System.out.println("Area of the triangle: " + triangleArea);
+    }
+
+    public static void main(String[] args) 
+    {
+        Shape obj = new Shape();
+        obj.calculateArea();
+    }
+}
