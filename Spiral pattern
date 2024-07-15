@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ public class Square
+ {
+    public static void main(String[] args) 
+    {
+        int size = 7;  
+        int[][] pattern = new int[size][size];
+              for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size; j++) 
+            {
+                 
+                int minDist = Math.min(Math.min(i, size - 1 - i), Math.min(j, size - 1 - j));
+                pattern[i][j] = 4 - minDist; 
+            }
+        }
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.print(pattern[i][j] + " ");
+            }
+            System.out.println(); 
+        }
+    }
+}
