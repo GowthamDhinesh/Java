@@ -1,0 +1,23 @@
+ import java.util.Scanner;
+public class Even 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String input = scanner.nextLine();
+        String[] words = input.split("\\s+");
+        System.out.println("Words with even length:");
+        for (String word : words)
+        {
+            if (word.length() % 2 == 0)
+            {
+                
+        System.out.println("Length of '" + word + "' is: " + word.length());
+         System.out.println(word);
+            }
+        }
+        
+        scanner.close();
+    }
+}
