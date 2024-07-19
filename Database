@@ -1,0 +1,23 @@
+CREATE TABLE student(
+  Student_name INT,
+ Register_no INT PRIMARY KEY,
+  Department VARCHAR,
+  Address VARCHAR,
+  Mobile_no LONG,
+  Nark_1 FLOAT,
+  Mark_2 FLOAT,
+   Mark_3 FLOAT,
+   Mark_4 FLOAT,
+   Nark_5 FLOAT
+  );
+  INSERT INTO student(Student_name , Register_no,Department, Address ,Mobile_no  )
+  
+  VALUES
+  ('Gowtham',73772121132,'IT','8/1 street',9787729677),
+  ('kavin',73772121147,'IT','no 2/1 street',9384951992),
+  ('Karthick',73772121144,'IT','no 8/1 street',9787729667);
+
+Student_name	Register_no	Department	Address	Mobile_no	Nark_1	Mark_2	Mark_3	Mark_4	Nark_5
+Gowtham	73772121132	IT	8/1 street	9787729677					
+kavin	73772121147	IT	no 2/1 street	9384951992					
+Karthick	73772121144	IT	no 8/1 street	9787729667					
