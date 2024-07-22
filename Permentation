@@ -1,0 +1,24 @@
+ import java.util.Scanner;
+ public class Permentation
+ {
+     public static void main(String[] args)
+     {
+         String st="bcd";
+         for(int i=0;i<3;i++)
+         {
+             for(int j=0;j<3;j++)
+             {
+                 for(int k=0;k<3;k++)
+                 {
+                     if(i!=j&&j!=k&&k!=i)
+                 {
+                 System.out.println(st.charAt(i));
+                   System.out.println(st.charAt(j));
+                     System.out.println(st.charAt(k));
+             }
+             System.out.println();
+         }
+     }
+         }
+     }
+ }
